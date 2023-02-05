@@ -22,6 +22,3 @@ elif(codigo==5):
     total=qtd*1.50
 print("Total: R$ {:.2f}".format(total))
 ```
-
-
-
