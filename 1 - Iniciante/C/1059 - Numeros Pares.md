@@ -1,4 +1,11 @@
+```
+#Pergunta:
+
 Faça um programa que mostre os números pares entre 1 e 100, inclusive.
+```
+
+```
+#Resposta:
 
 #include<stdio.h>
 
@@ -15,3 +22,4 @@ for(i=0;i<=100;i++)
 }	
 return 0;
 }
+```
