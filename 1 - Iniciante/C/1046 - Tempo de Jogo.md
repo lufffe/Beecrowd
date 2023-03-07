@@ -8,7 +8,7 @@ sabendo que o mesmo pode começar em um dia e terminar em outro,
 ```
 
 ```
-#Pergunta:
+#Resposta:
 
 #include <stdio.h>
 
