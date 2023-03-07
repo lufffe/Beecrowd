@@ -10,22 +10,20 @@ Utilize a fórmula:
 
 #include <stdio.h>
  
-int main() {
- 
+int main() 
+{
  	int a,b,c ;
 	scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%d",&c);
+    	scanf("%d",&b);
+    	scanf("%d",&c);
     
-    if(a>c && a>b){
-    	printf("%d eh o maior\n",a);
-	}else if(b>c){
+    	if(a>c && a>b)
+    		printf("%d eh o maior\n",a);
+	else if(b>c)
 		printf("%d eh o maior\n",b);
-	}else if (c>b){
+	else if (c>b)
 		printf("%d eh o maior\n",c);
-	}
-return 0;
-}
+	return 0;
 }
 ```
 
