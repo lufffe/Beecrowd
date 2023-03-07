@@ -1,8 +1,4 @@
 ```
-INCOMPLETO
-```
-
-```
 #Pergunta:
 
 Leia 3 valores inteiros e ordene-os em ordem crescente. No final, mostre os valores em ordem crescente,
