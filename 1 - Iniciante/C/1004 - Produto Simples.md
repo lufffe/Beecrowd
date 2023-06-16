@@ -15,7 +15,7 @@
         printf("PROD = %d\n",prod);
     }
 
->PYTHON
+>PYTHON3
 
     a = int(input())
     b = int(input())
