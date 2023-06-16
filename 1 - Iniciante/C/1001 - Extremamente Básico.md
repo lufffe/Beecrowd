@@ -10,17 +10,17 @@ e não esqueça de imprimir o fim de linha após o resultado, caso contrário, v
 */
 #Resposta:
 
-#include <stdio.h>
- 
-int main() {
-    int A, B, X ;
- 
-scanf("%d",&A);
-scanf("%d",&B);
-X = (A + B);
+    #include <stdio.h>
 
-printf("X = %d\n", X);
+    int main() {
+        int A, B, X ;
+
+    scanf("%d",&A); 
+    scanf("%d",&B);
+    X = (A + B);
+
+    printf("X = %d\n", X);
  
     return 0;
-}
+    }
 
