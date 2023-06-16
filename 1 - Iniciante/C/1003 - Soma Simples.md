@@ -15,7 +15,7 @@
         printf("SOMA = %d\n",SOMA);
     }
 
->PYTHON3
+>PYTHON 3.9
 
 
     A = int(input())
