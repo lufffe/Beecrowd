@@ -18,7 +18,7 @@
     }
 
 
->PYTHON3
+>PYTHON 3
     
     A = input()
     B = input()
