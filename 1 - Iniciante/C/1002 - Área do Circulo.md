@@ -3,6 +3,7 @@
 >C
 
  	#include <stdio.h>
+	
 	int main()
 	{
 		double pi,raio,A ;
@@ -11,6 +12,8 @@
 		pi = 3.14159 ;
 		A = (pi * pow(raio,2));
 		printf("A=%.4lf\n",A);
+		
+		return 0
 	}
 	
 >PYTHON
