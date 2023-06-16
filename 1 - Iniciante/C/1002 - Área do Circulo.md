@@ -17,7 +17,7 @@
 		return 0;
 	}
 	
->PYTHON
+>PYTHON3
 	
 	pi = 3.14159
 	raio = float(input())
