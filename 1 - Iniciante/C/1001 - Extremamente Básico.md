@@ -25,4 +25,4 @@
     
     X = int(A) + int(B)
     
-    print("X = {}".format(X))
+    print(f"X = {X}")
