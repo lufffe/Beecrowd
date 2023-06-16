@@ -1,13 +1,6 @@
-/*
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/d86beb25-2a72-4480-8d1d-213d699565a7)
 
-Hello World - O seu primeiro programa em qualquer linguagem de programação normalmente é o "Hello World!". 
-Neste primeiro problema tudo o que você precisa fazer é imprimir esta mensagem na tela.
-
-#Resposta:
-*/
-
-#C
+>C
     
     #include <stdio.h>           
     int main() 
@@ -16,3 +9,6 @@ Neste primeiro problema tudo o que você precisa fazer é imprimir esta mensagem
       return 0;                             
     }      
 
+>PYTHON
+
+    print("Hello World!")
