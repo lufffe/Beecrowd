@@ -1,23 +1,21 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/8d7bac37-9a33-4425-aa41-ae40c0ba79d9)
 
-Área do Circulo - A fórmula para calcular a área de uma circunferência é: area = π . raio2. 
-Considerando para este problema que π = 3.14159:
-Efetue o cálculo da área, elevando o valor de raio ao quadrado e multiplicando por π.
-```
+>C
 
-```
-#Resposta:
-
-#include <stdio.h>
-
-int main(){
-	double pi,raio,A ;
+ 	#include <stdio.h>
+	int main()
+	{
+		double pi,raio,A ;
+		
+		scanf("%lf",&raio);
+		pi = 3.14159 ;
+		A = (pi * pow(raio,2));
+		printf("A=%.4lf\n",A);
+	}
 	
-	scanf("%lf",&raio);
-	pi = 3.14159 ;
-	A = (pi * pow(raio,2));
+>PYTHON
 	
-	printf("A=%.4lf\n",A);
-}
-```
+	pi = 3.14159
+	raio = float(input())
+	A = (pi * (raio ** 2))
+	print("A={:.4f}".format(A))
