@@ -23,6 +23,7 @@
     numero_funcionario = int(input())
     horas_funcionario = float(input())
     valor_horas = float(input())
+    
     salario = ( horas_funcionario * valor_horas )
 
     print(f"NUMBER = {numero_funcionario}")
