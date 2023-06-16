@@ -1,22 +1,26 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/02a63e4d-0c91-431f-8ab7-6ef03952c615)
 
-Soma Simples - Leia dois valores inteiros, no caso para variáveis A e B. A seguir, 
-calcule a soma entre elas e atribua à variável SOMA. A seguir escrever o valor desta variável.
-```
+>C
 
-```
-#Resposta:
-
-#include<stdio.h>
-
-int main(){
-    int A,B,SOMA;
+    #include<stdio.h>
     
-    scanf("%d",&A);
-    scanf("%d",&B);
-    SOMA = (A + B);
+    int main()
+    {
+        int A,B,SOMA;
+
+        scanf("%d",&A);
+        scanf("%d",&B);
+        SOMA = (A + B);
+
+        printf("SOMA = %d\n",SOMA);
+    }
+
+>PYTHON
+
+
+    A = int(input())
+    B = int(input())
     
-    printf("SOMA = %d\n",SOMA);
-}
-```
+    SOMA = (A+B)
+
+    print("SOMA = {}".format(SOMA))
