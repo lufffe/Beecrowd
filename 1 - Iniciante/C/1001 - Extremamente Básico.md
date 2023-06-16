@@ -7,9 +7,11 @@
     int main() 
     {
         int A, B, X ;
+        
         scanf("%d",&A); 
         scanf("%d",&B);
         X = (A + B);
+        
         printf("X = %d\n", X);
 
         return 0;
@@ -20,5 +22,7 @@
     
     A = input()
     B = input()
+    
     X = int(A) + int(B)
+    
     print("X = {}".format(X))
