@@ -24,4 +24,4 @@
 	
 	A = (pi * (raio ** 2))
 	
-	print("A={:.4f}".format(A))
+	print("A={A:.4f}")
