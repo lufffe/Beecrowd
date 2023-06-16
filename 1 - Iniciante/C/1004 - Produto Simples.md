@@ -22,4 +22,4 @@
     
     prod = a * b
 
-    print("PROD = {}".format(prod))
+    print(f"PROD = {prod}")
