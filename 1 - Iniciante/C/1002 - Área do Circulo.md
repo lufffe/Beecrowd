@@ -11,6 +11,7 @@
 		scanf("%lf",&raio);
 		pi = 3.14159 ;
 		A = (pi * pow(raio,2));
+		
 		printf("A=%.4lf\n",A);
 		
 		return 0;
@@ -20,5 +21,7 @@
 	
 	pi = 3.14159
 	raio = float(input())
+	
 	A = (pi * (raio ** 2))
+	
 	print("A={:.4f}".format(A))
