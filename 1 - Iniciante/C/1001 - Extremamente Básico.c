@@ -7,14 +7,14 @@ Imprima X conforme exemplo apresentado abaixo. Não apresente mensagem alguma al
 e não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".
 
 
-*/
+
 #Resposta:
+*/
+#include <stdio.h>
 
-    #include <stdio.h>
-
-    int main() {
-        int A, B, X ;
-
+int main() 
+{
+    int A, B, X ;
     scanf("%d",&A); 
     scanf("%d",&B);
     X = (A + B);
@@ -22,5 +22,5 @@ e não esqueça de imprimir o fim de linha após o resultado, caso contrário, v
     printf("X = %d\n", X);
  
     return 0;
-    }
+}
 
