@@ -13,7 +13,7 @@
 		A = (pi * pow(raio,2));
 		printf("A=%.4lf\n",A);
 		
-		return 0
+		return 0;
 	}
 	
 >PYTHON
