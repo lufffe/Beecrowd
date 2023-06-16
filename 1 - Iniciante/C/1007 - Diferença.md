@@ -27,4 +27,4 @@
     
     dif = (a * b) - (c * d)
 
-    print("DIFERENCA = {}".format(dif))
+    print(f"DIFERENCA = {dif}")
