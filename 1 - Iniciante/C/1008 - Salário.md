@@ -6,7 +6,7 @@
 
     int main()
     {
-        int numero_funcionario ;
+        int numero_funcionario;
         double horas,valor_hora,salario;
 
         scanf("%i",&numero_funcionario);
@@ -18,13 +18,12 @@
         printf("SALARY = U$ %.2lf\n",salario);
     }
 
->PYTHON
+>PYTHON 3.9
 
     numero_funcionario = int(input())
     horas_funcionario = float(input())
     valor_horas = float(input())
-    
     salario = ( horas_funcionario * valor_horas )
 
-    print("NUMBER = {}".format(numero_funcionario))
-    print("SALARY = U$ {:.2f}".format(salario))
+    print(f"NUMBER = {numero_funcionario}")
+    print(f"SALARY = U$ {salario:.2f}")
