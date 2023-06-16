@@ -11,6 +11,6 @@
       return 0;      
     }      
 
->PYTHON
+>PYTHON 3
 
     print("Hello World!")
