@@ -24,4 +24,4 @@
     raio = float(input())
     area = (4/3)*pi*(raio**3)
 
-    print("VOLUME = {:.3f}".format(area))
+    print(f"VOLUME = {area:.3f}")
