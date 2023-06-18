@@ -1,6 +1,6 @@
 ![image](https://github.com/lufffe/Beecrowd/assets/90646635/19418cf6-af68-4b23-9a56-038cd46526fc)
 
->PYTHON
+>PYTHON 3.9
 
     notas = [100,50,20,10,5,2]
     moedas =[1,0.50,0.25,0.10,0.05,0.01]
