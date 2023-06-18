@@ -1,29 +1,33 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/7bed0051-cf4c-4562-852a-07f4bced2144)
 
-Faça um programa que leia três valores e apresente o maior dos três valores lidos seguido da mensagem “eh o maior”. 
-Utilize a fórmula:
-```
+>C
 
-```
-#Resposta:
+	#include <stdio.h>
 
-#include <stdio.h>
- 
-int main() 
-{
- 	int a,b,c ;
-	scanf("%d",&a);
-    	scanf("%d",&b);
-    	scanf("%d",&c);
-    
-    	if(a>c && a>b)
-    		printf("%d eh o maior\n",a);
-	else if(b>c)
-		printf("%d eh o maior\n",b);
-	else if (c>b)
-		printf("%d eh o maior\n",c);
-	return 0;
-}
-```
+	int main() 
+	{
+		int a,b,c ;
+		scanf("%d",&a);
+		scanf("%d",&b);
+		scanf("%d",&c);
 
+		if(a>c && a>b)
+			printf("%d eh o maior\n",a);
+		else if(b>c)
+			printf("%d eh o maior\n",b);
+		else if (c>b)
+			printf("%d eh o maior\n",c);
+		return 0;
+	}
+
+>PYTHON
+
+	a,b,c = input().split()
+	a,b,c = int(a),int(b),int(c)
+
+	if (a>c) and (a>b):
+	    print("{} eh o maior".format(a))
+	elif (b>c):
+	    print("{} eh o maior".format(b))
+	else:    
+	    print("{} eh o maior".format(c))
