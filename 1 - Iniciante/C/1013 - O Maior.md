@@ -26,8 +26,8 @@
 	a,b,c = int(a),int(b),int(c)
 
 	if (a>c) and (a>b):
-	    print("{} eh o maior".format(a))
+	    print(f"{a} eh o maior")
 	elif (b>c):
-	    print("{} eh o maior".format(b))
+	    print(f"{b} eh o maior")
 	else:    
-	    print("{} eh o maior".format(c))
+	    print(f"{c} eh o maior")
