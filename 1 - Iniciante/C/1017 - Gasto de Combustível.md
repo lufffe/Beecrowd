@@ -1,29 +1,28 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/8c313c8e-6b3b-410d-a1df-e2caed8b90ab)
 
-Joaozinho quer calcular e mostrar a quantidade de litros de combustível gastos em uma viagem, 
-ao utilizar um automóvel que faz 12 KM/L. Para isso, ele gostaria que você o auxiliasse através de um simples programa.
-Para efetuar o cálculo, deve-se fornecer o tempo gasto na viagem (em horas) e a velocidade média durante a mesma (em km/h).
-Assim, pode-se obter distância percorrida e, em seguida, calcular quantos litros seriam necessários. 
-Mostre o valor com 3 casas decimais após o ponto.
-```
+    #include <stdio.h>
 
-```
-#Resposta:
+    int main() 
+    {
+        int tempo,vm;
+        float litros;
 
-#include <stdio.h>
- 
-int main() {
- 
-    int tempo,vm;
-    float litros;
-    
-    scanf("%d",&tempo);
-    scanf("%d",&vm);
-    litros = ((vm*tempo)/12.00);
-    
-    printf("%.3f\n",litros);
-    
-    return 0;
-}
-```
+        scanf("%d",&tempo);
+        scanf("%d",&vm);
+        
+        litros = ((vm*tempo)/12.00);
+
+        printf("%.3f\n",litros);
+
+        return 0;
+    }
+
+>PYTHON 
+
+    tempo = int(input())
+    vm = int(input())
+    auto = 12
+
+    litros = (vm * tempo)/auto
+
+    print(f"{litros:.3f}")
