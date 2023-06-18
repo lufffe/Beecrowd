@@ -16,3 +16,11 @@
 
        return 0;
     }
+
+>PYTHON
+
+    distancia = int(input())
+
+    tempo = distancia * 2
+
+    print(F"{tempo} minutos")
