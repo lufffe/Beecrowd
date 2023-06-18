@@ -1,6 +1,7 @@
 ![image](https://github.com/lufffe/Beecrowd/assets/90646635/36e05ceb-e4ae-483b-b8b7-3d7712beaf54)
 
 >C
+	
 	#include <stdio.h>
 
 	int main()
