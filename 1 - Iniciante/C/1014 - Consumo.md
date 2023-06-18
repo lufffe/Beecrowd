@@ -1,25 +1,28 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/931d557e-c963-4756-b0a1-82e2aae93dd4)
 
-Calcule o consumo médio de um automóvel sendo fornecidos a distância total percorrida (em Km) 
-e o total de combustível gasto (em litros).
-``` 
-
-```
-#Resposta:
-
-#include <stdio.h>
- 
-int main() {
- 
-    double distancia,consumo,total;
+>C
     
-    scanf("%lf",&distancia);
-    scanf("%lf",&consumo);
-    
-    total = (distancia/consumo);
-    printf("%.3lf km/l\n",total);
+    #include <stdio.h>
+
+    int main() {
  
-    return 0;
-}
-```
+       double distancia,consumo,total;
+
+       scanf("%lf",&distancia);
+       scanf("%lf",&consumo);
+
+       total = (distancia/consumo);
+       
+       printf("%.3lf km/l\n",total);
+
+       return 0;
+    }
+
+>PYTHON 3.9
+
+    distancia = input()
+    combustivel = input()
+    
+    total = float(distancia)/float(combustivel)
+
+    print(f"{total:.3f} km/l")
