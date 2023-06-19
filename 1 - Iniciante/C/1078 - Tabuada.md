@@ -22,8 +22,8 @@
 	
 >PYTHON 3.9
 
-	valor = int(input())
+    valor = int(input())
 
-	if(valor>2 and valor<10000):
-	    for i in range(1,11):
-                print(f"{i} x {valor} = {i*valor}")
+    if(valor>2 and valor<10000):
+        for i in range(1,11):
+            print(f"{i} x {valor} = {i*valor}")
