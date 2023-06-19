@@ -27,7 +27,7 @@
 			printf("0 ano(s)\n0 mes(es)\n%d dia(s)\n",dias);
 	}
 
->PYTHON
+>PYTHON 3.9
 
 	dias = input()
 	dias = int(dias)

@@ -45,9 +45,9 @@
 	    baixo = 2*a
 
 	    if(a>0):
-		r1 = (-b+raiz)/baixo
-		r2 = (-b-raiz)/baixo
-		print(f"R1 = {r1:.5f}")
-		print(f"R2 = {r2:.5f}")
+			r1 = (-b+raiz)/baixo
+			r2 = (-b-raiz)/baixo
+			print(f"R1 = {r1:.5f}")
+			print(f"R2 = {r2:.5f}")
 	    else:
-		print("Impossivel calcular")
+			print("Impossivel calcular")
