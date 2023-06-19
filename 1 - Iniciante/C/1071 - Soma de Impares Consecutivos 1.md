@@ -1,39 +1,54 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/43bc19b3-f0fe-45df-b5a2-50e1b4443aad)
 
-Leia 2 valores inteiros X e Y. A seguir, calcule e mostre a soma dos números impares entre eles.
-```
+>C
 
-```
-#Resposta:
+	#include<stdio.h>
 
-#include<stdio.h>
+	int main()
+	{
+	    int a,b,total,i;
 
-int main()
-{
+	    scanf("%d",&a);
+	    scanf("%d",&b);
+	    total=0;
 
-int a,b,total,i;
+	    if(a<b)
+	    {
+		a=a+1;
+		for(i=a;i<b;i++)
+		{
+			if(i%2!=0)
+			    total=total+i;
+		}
+	    }
+	    else
+	    {
+		b=b+1;
+		for(i=b;i<a;i++)
+		{
+			if(i%2!=0)
+			    total=total+i;
+		}
+	    }
 
-scanf("%d",&a);
-scanf("%d",&b);
-total=0;
+	    printf("%d\n",total);
 
-if(a<b){
-	a=a+1;
-	for(i=a;i<b;i++){
-		if(i%2!=0)
-		total=total+i;
+		return 0;
 	}
-}else{
-	b=b+1;
-	for(i=b;i<a;i++){
-		if(i%2!=0)
-		total=total+i;
-	}
-}
+	
+>PYTHON 3.9
 
-printf("%d\n",total);
+	a = int(input())
+	b = int(input())
+	total= 0
 
-	return 0;
-}
-```
+	if(a<b):
+	    for val in range(a+1,b):
+		if(val%2 != 0):
+		    total = total +val
+	else:
+	    for val in range(b+1,a):
+		if(val%2 != 0):
+		    total = total +val
+		    
+	print(total)
