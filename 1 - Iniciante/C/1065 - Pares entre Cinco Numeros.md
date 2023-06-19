@@ -1,29 +1,43 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/0a71604e-dfc3-4343-b10b-6638c5dfa556)
 
-Faça um programa que leia 5 valores inteiros. Conte quantos destes valores digitados são pares e mostre esta informação.
-```
+>C
 
-```
-#Resposta:
+	#include<stdio.h>
 
-#include<stdio.h>
+	int main()
+	{
 
-int main()
-{
+	    int valores[6],i,par;
 
-int valores[6],i,par;
+	    for(i=0;i<5;i++)
+	    {
+		scanf("%d",&valores[i]);
 
-for(i=0;i<5;i++){
-	scanf("%d",&valores[i]);
-	
-	if(valores[i]%2==0){
-		par++;
-		
+		if(valores[i]%2==0)
+		{
+			par++;
+
+		}
+	    }
+
+	    printf("%d valores pares\n",par);
+		return 0;
 	}
-}
 
-printf("%d valores pares\n",par);
-	return 0;
-}
-```
+>PYTHON 3.9
+
+	a = float(input())
+	b = float(input())
+	c = float(input())
+	d = float(input())
+	e = float(input())
+
+	lista = a,b,c,d,e
+	cont=0
+
+	for num in lista:
+	    valor=num%2
+	    if(valor==0):
+		cont = cont + 1
+
+	print(f"{cont} valores pares")
