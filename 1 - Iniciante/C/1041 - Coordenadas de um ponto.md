@@ -1,50 +1,39 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/6102ce4c-8c0b-49b6-ac6c-614edcca9954)
 
-    Coordenadas de um ponto - Leia 2 valores com uma casa decimal (x e y), 
-    que devem representar as coordenadas de um ponto em um plano. seguir, 
-    determine qual o quadrante ao qual pertence o ponto, 
-    ou se está sobre um dos eixos cartesianos ou na origem (x = y = 0).
+>C
 
-    Se o ponto estiver na origem, escreva a mensagem “Origem”.
-    Se o ponto estiver sobre um dos eixos escreva “Eixo X” ou “Eixo Y”, conforme for a situação.
-```
+	#include<stdio.h>
 
-```
-#Resposta:
+	int main()
+	{
+		float x,y;
 
-#include<stdio.h>
+		scanf("%f %f",&x,&y);
 
-int main()
-{
-	float x,y;
-	
-	scanf("%f %f",&x,&y);
-	
-if(x>0){
-    if(y>0)
-        printf("Q1\n");
-    else if(y<0)
-        printf("Q4\n");
-    else if(y==0)
-        printf("Eixo X\n");
-}
-else if(x<0)
-{
-    if(y>0)
-        printf("Q2\n");
-    else if(y<0)
-        printf("Q3\n");
-    else if(y==0)
-        printf("Eixo X\n");
-}
-else if(x==0)
-{
-    if(y!=0)
-        printf("Eixo Y\n");
-    else
-        printf("Origem\n");
-}
-    return 0;
-}
-```
+		if(x>0)
+		{
+	    		if(y>0)
+				printf("Q1\n");
+	    		else if(y<0)
+				printf("Q4\n");
+	    		else if(y==0)
+				printf("Eixo X\n");
+		}
+		else if(x<0)
+		{
+	    		if(y>0)
+				printf("Q2\n");
+	    		else if(y<0)
+				printf("Q3\n");
+	    		else if(y==0)
+				printf("Eixo X\n");
+		}
+		else if(x==0)
+		{
+	    		if(y!=0)
+				printf("Eixo Y\n");
+	    		else
+				printf("Origem\n");
+		}
+	    return 0;
+	}
