@@ -1,37 +1,39 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/04dabfcc-ccd4-493b-b527-561585583a88)
 
-Você deve fazer um programa que leia um valor qualquer e apresente uma mensagem dizendo
- em qual dos seguintes intervalos ([0,25], (25,50], (50,75], (75,100]) este valor se encontra. 
- Obviamente se o valor não estiver em nenhum destes intervalos, deverá ser impressa a mensagem 
- “Fora de intervalo”.
+>C
 
-O símbolo ( representa "maior que". Por exemplo:
-[0,25]  indica valores entre 0 e 25.0000, inclusive eles.
-(25,50] indica valores maiores que 25 Ex: 25.00001 até o valor 50.0000000
-```
+	#include<stdio.h>
 
-```
-#Resposta:
+	int main()
+	{
+		float valor;
 
-#include<stdio.h>
+		scanf("%f",&valor);
 
-int main()
-{
-	float valor;
-	
-	scanf("%f",&valor);
-	
-	if(valor>=0 && valor<=25)
-		printf("Intervalo [0,25]\n");
-	else if(valor>25 && valor <=50)
-		printf("Intervalo (25,50]\n");
-	else if(valor>50 && valor <=75)
-		printf("Intervalo (50,75]\n");
-	else if(valor>75 && valor <=100)
-		printf("Intervalo (75,100]\n");
-	else
-		printf("Fora de intervalo\n");
-    return 0;
-}
-```
+		if(valor>=0 && valor<=25)
+			printf("Intervalo [0,25]\n");
+		else if(valor>25 && valor <=50)
+			printf("Intervalo (25,50]\n");
+		else if(valor>50 && valor <=75)
+			printf("Intervalo (50,75]\n");
+		else if(valor>75 && valor <=100)
+			printf("Intervalo (75,100]\n");
+		else
+			printf("Fora de intervalo\n");
+	    return 0;
+	}
+
+>PYTHON 3.9
+
+	valor = float(input())
+
+	if(valor>=0 and valor <=25):   
+	    print("Intervalo [0,25]")
+	elif(valor>25 and valor <=50):    
+	    print("Intervalo (25,50]")
+	elif(valor>50 and valor <=75):    
+	    print("Intervalo (50,75]")
+	elif(valor>75 and valor<=100):    
+	    print("Intervalo (75,100]")
+	else:    
+	    print("Fora de intervalo")
