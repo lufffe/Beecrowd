@@ -17,7 +17,7 @@
 			printf("Valores nao aceitos\n");
 	}
 
->PYTHON
+>PYTHON 3.9
 
 	A,B,C,D = map(int,input().split())
 	soma1 = C + D
