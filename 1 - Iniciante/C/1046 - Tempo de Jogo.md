@@ -1,40 +1,46 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/5875f85f-b890-4f5e-aa6f-216bb94c147a)
 
-Leia a hora inicial e a hora final de um jogo. 
-A seguir calcule a duração do jogo, 
-sabendo que o mesmo pode começar em um dia e terminar em outro,
-tendo uma duração mínima de 1 hora e máxima de 24 horas.
-```
+>C
 
-```
-#Resposta:
+	#include <stdio.h>
 
-#include <stdio.h>
+	int main()
+	{
 
-int main()
-{
-	
-	int a,b,valor;
-	
-	scanf("%d %d",&a,&b);
-	
-	if(a==b)
-		printf("O JOGO DUROU 24 HORA(S)\n");
-	else{
-		if(a<b)
-		{
-			valor=b-a;
-			printf("O JOGO DUROU %d HORA(S)\n",valor);
+		int a,b,valor;
+
+		scanf("%d %d",&a,&b);
+
+		if(a==b)
+			printf("O JOGO DUROU 24 HORA(S)\n");
+		else{
+			if(a<b)
+			{
+				valor=b-a;
+				printf("O JOGO DUROU %d HORA(S)\n",valor);
+			}
+			else
+			{
+				valor=24-a;
+				valor=valor+b;
+				printf("O JOGO DUROU %d HORA(S)\n",valor);
+			}
 		}
-		else
-		{
-			valor=24-a;
-			valor=valor+b;
-			printf("O JOGO DUROU %d HORA(S)\n",valor);
-		}
+
+		return 0;
 	}
 
-	return 0;
-}
-```
+>PYTHON 3.9
+
+	a,b = map(int,input().split())
+
+	if(a==b):
+	    print("O JOGO DUROU 24 HORA(S)")
+	else:
+	    if(a<b):
+		valor=b-a
+		print(f"O JOGO DUROU {valor} HORA(S)")
+	    else:
+		valor=24-a
+		valor=valor+b
+		print(f"O JOGO DUROU {valor} HORA(S)")
