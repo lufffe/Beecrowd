@@ -1,51 +1,70 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/74f22326-a356-44ab-b3b8-a1a2fbe0df9a)
 
-Leia um valor inteiro N. Este valor será a quantidade de valores inteiros X que serão lidos em seguida.
-Mostre quantos destes valores X estão dentro do intervalo [10,20] e quantos estão fora do intervalo, 
-mostrando essas informações.
-```
+>C
 
-```
-#Resposta:
+	#include<stdio.h>
 
-#include<stdio.h>
-
-int main()
-{
-
-int quant,total,valor;
-int dentro,fora,limitevalor;
-dentro=0;
-fora=0;
-
-limitevalor= pow(10,7);
-scanf("%d",&quant);
-
-if(quant<10000)
-{
-	while(total!=quant)
+	int main()
 	{
-		scanf("%d",&valor);
-		
-		if((valor>-limitevalor) && (valor<limitevalor))
+
+		int quant,total,valor;
+		int dentro,fora,limitevalor;
+		dentro=0;
+		fora=0;
+		limitevalor= pow(10,7);
+
+		scanf("%d",&quant);
+
+		if(quant<10000)
 		{
-			if((valor>=10) && (valor<=20))
+			while(total!=quant)
 			{
-				dentro++;
-			}
-			else
-			{
-				fora++;
+				scanf("%d",&valor);
+
+				if((valor>-limitevalor) && (valor<limitevalor))
+				{
+					if((valor>=10) && (valor<=20))
+					{
+						dentro++;
+					}
+					else
+					{
+						fora++;
+					}
+				}
+				total++;
 			}
 		}
-		total++;
+
+		printf("%d in\n",dentro);
+		printf("%d out\n",fora);
+
+			return 0;
 	}
-}
 
-printf("%d in\n",dentro);
-printf("%d out\n",fora);
+>PYTHON 3.9
 
-	return 0;
-}
-```
+	quant = int(input())
+
+	total= 0
+	lista = []
+	dentro=0 
+	fora=0
+	limitevalor=(10**7)
+	if(quant<10000):
+
+	    while(total!=quant):
+
+		valor=int(input())
+
+		if(valor>-limitevalor and valor<limitevalor):
+
+		    if(valor>=10 and valor<=20):
+			dentro = dentro +1
+		    else:
+			fora = fora+1
+
+		total = total+1
+
+	print(f"{dentro} in")
+	print(f"{fora} out")
