@@ -21,6 +21,6 @@
 
 >PYTHON 3.9
 
-	for i in range(0,101):
-	    if((i%2)==0) and (i>0) and (i<=100):
+	for i in range(2,101):
+	    if((i%2)==0):
 		print(i)
