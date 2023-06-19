@@ -14,3 +14,7 @@
 >PYTHON 3.9
 
     print("Hello World!")
+
+>JavaScript
+
+    console.log("Hello World!");
