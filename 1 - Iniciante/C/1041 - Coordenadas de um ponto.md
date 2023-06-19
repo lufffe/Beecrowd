@@ -37,3 +37,27 @@
 		}
 	    return 0;
 	}
+
+>PYTHON 3.9
+
+	x,y = map(float,input().split())
+
+	if(x>0):
+	    if(y>0):
+		print("Q1")
+	    elif(y<0):
+		print("Q4")
+	    elif(y==0):
+		print("Eixo X")
+	elif(x<0):
+	    if(y>0):
+		print("Q2")
+	    elif(y<0):
+		print("Q3")
+	    elif(y==0):
+		print("Eixo X")
+	elif(x==0):
+	    if(y!=0):
+		print("Eixo Y")
+	    else:
+		print("Origem")
