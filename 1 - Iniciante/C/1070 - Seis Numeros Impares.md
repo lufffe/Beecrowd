@@ -21,3 +21,14 @@
 
 		return 0;
 	}
+
+>PYTHON 3.9
+
+	valor = int(input())
+
+	lista=[]
+
+	for val in range(valor,valor+12):
+
+	    if(val%2 != 0):
+		print(val)
