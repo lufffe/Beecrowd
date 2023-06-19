@@ -62,3 +62,15 @@
 	    return 0;
 	}
 
+>PYTHON 3.9
+
+	a,b,c = map(int,input().split())
+
+	lista = [a,b,c]
+	listamaior = sorted(lista)
+
+	for i in listamaior:
+	    print(i)
+	print("")
+	for i in lista:
+	    print(i)
