@@ -1,51 +1,67 @@
-```
-#Pergunta:
+![image](https://github.com/lufffe/Beecrowd/assets/90646635/f1b87200-2130-4bfc-84c6-00de4a8c52f8)
 
-Leia um valor inteiro N. Este valor será a quantidade de valores que serão lidos em seguida. Para cada valor lido, 
-mostre uma mensagem em inglês dizendo se este valor lido é par (EVEN), ímpar (ODD), positivo (POSITIVE) ou negativo (NEGATIVE). 
-No caso do valor ser igual a zero (0), embora a descrição correta seja (EVEN NULL), pois por definição zero é par, 
-seu programa deverá imprimir apenas NULL.
-```
+>C
 
-```
-#Resposta:
+	#include<stdio.h>
 
-#include<stdio.h>
+	int main()
+	{
 
-int main()
-{
+		int qtd,i;
 
-	int qtd,i;
-	
-	scanf("%d",&qtd);
-	
-	int lista[qtd];
-	
-	if(qtd<10000){
-		
-		for(i=0;i<qtd;i++){
-			
-	        scanf("%d",&lista[i]);
-	        
-	        if(lista[i]>0){
-	            if(lista[i]%2==0)
-	                lista[i]="EVEN POSITIVE";
-	            else
-	                lista[i]="ODD POSITIVE";
-	        }else if(lista[i]<0){
-	        	
-	            if(lista[i]%2==0)
-	                lista[i]="EVEN NEGATIVE";
-	            else
-	               lista[i]="ODD NEGATIVE";
-	        }else
-	           lista[i]="NULL";
+		scanf("%d",&qtd);
+
+		int lista[qtd];
+
+		if(qtd<10000){
+
+			for(i=0;i<qtd;i++){
+
+			scanf("%d",&lista[i]);
+
+			if(lista[i]>0){
+			    if(lista[i]%2==0)
+				lista[i]="EVEN POSITIVE";
+			    else
+				lista[i]="ODD POSITIVE";
+			}else if(lista[i]<0){
+
+			    if(lista[i]%2==0)
+				lista[i]="EVEN NEGATIVE";
+			    else
+			       lista[i]="ODD NEGATIVE";
+			}else
+			   lista[i]="NULL";
+			}
 		}
+		for(i=0;i<qtd;i++){
+			printf("%s\n",lista[i]);
+		}
+
+		return 0;
 	}
-	for(i=0;i<qtd;i++){
-		printf("%s\n",lista[i]);
-	}
-    	
-	return 0;
-}
-``` 
+	
+>PYTHON 3.9
+
+	qtd = int(input())
+	i=0
+	lista=[]
+
+	if(qtd<10000):
+	    for i in range(i,qtd):
+		valor = int(input())
+		if(valor>0):
+		    if(valor%2==0):
+			lista.append("EVEN POSITIVE")
+		    else:
+			lista.append("ODD POSITIVE")
+		elif(valor<0):
+		    if(valor%2==0):
+			lista.append("EVEN NEGATIVE")
+		    else:
+		       lista.append("ODD NEGATIVE")
+		else:
+		   lista.append("NULL")
+
+	for i in lista:
+	    print(f"{i}")
