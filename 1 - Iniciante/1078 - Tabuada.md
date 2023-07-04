@@ -2,22 +2,22 @@
 
 >C
 ```C
-	#include<stdio.h>
+#include<stdio.h>
 
-	int main()
+int main()
+{
+	int valor,i;
+
+	scanf("%d",&valor);
+	if(valor>2 && valor<10000)
 	{
-	    int valor,i;
-
-	    scanf("%d",&valor);
-	    if(valor>2 && valor<10000)
-	    {
-			for(i=1;i<=10;i++)
-			{
-				printf("%d x %d = %d\n",i,valor,i*valor);
-			}
+		for(i=1;i<=10;i++)
+		{
+			printf("%d x %d = %d\n",i,valor,i*valor);
 		}
-	    return 0;
 	}
+	return 0;
+}
 ```
 
 >PYTHON 3.9
