@@ -1,28 +1,32 @@
 ![image](https://github.com/lufffe/Beecrowd/assets/90646635/8c313c8e-6b3b-410d-a1df-e2caed8b90ab)
 
-    #include <stdio.h>
+>C
+```C
+#include <stdio.h>
 
-    int main() 
-    {
-        int tempo,vm;
-        float litros;
+int main() 
+{
+	int tempo,vm;
+	float litros;
 
-        scanf("%d",&tempo);
-        scanf("%d",&vm);
-        
-        litros = ((vm*tempo)/12.00);
+	scanf("%d",&tempo);
+	scanf("%d",&vm);
+	
+	litros = ((vm*tempo)/12.00);
 
-        printf("%.3f\n",litros);
+	printf("%.3f\n",litros);
 
-        return 0;
-    }
+	return 0;
+}
+```
 
->PYTHON 
+>PYTHON 3.9
+```Python 3.9
+tempo = int(input())
+vm = int(input())
+auto = 12
 
-    tempo = int(input())
-    vm = int(input())
-    auto = 12
+litros = (vm * tempo)/auto
 
-    litros = (vm * tempo)/auto
-
-    print(f"{litros:.3f}")
+print(f"{litros:.3f}")
+```
