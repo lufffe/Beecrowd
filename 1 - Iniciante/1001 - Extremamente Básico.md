@@ -20,7 +20,7 @@ int main()
 ```
 
 >PYTHON 3.9
-```Python3.9
+```Python 3.9
 A = input()
 B = input()
 
