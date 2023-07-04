@@ -47,26 +47,26 @@ int main()
 
 >PYTHON 3.9
 ```Python 3.9
-	qtd = int(input())
-	i=0
-	lista=[]
+qtd = int(input())
+i=0
+lista=[]
 
-	if(qtd<10000):
-	    for i in range(i,qtd):
-			valor = int(input())
-			if(valor>0):
-			    if(valor%2==0):
-					lista.append("EVEN POSITIVE")
-			    else:
-					lista.append("ODD POSITIVE")
-			elif(valor<0):
-			    if(valor%2==0):
-					lista.append("EVEN NEGATIVE")
-			    else:
-			       lista.append("ODD NEGATIVE")
+if(qtd<10000):
+	for i in range(i,qtd):
+		valor = int(input())
+		if(valor>0):
+			if(valor%2==0):
+				lista.append("EVEN POSITIVE")
 			else:
-			   lista.append("NULL")
+				lista.append("ODD POSITIVE")
+		elif(valor<0):
+			if(valor%2==0):
+				lista.append("EVEN NEGATIVE")
+			else:
+			   lista.append("ODD NEGATIVE")
+		else:
+		   lista.append("NULL")
 
-	for i in lista:
-	    print(f"{i}")
+for i in lista:
+	print(f"{i}")
 ```
