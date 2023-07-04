@@ -2,29 +2,31 @@
 
 
 >C
+```C
+#include <stdio.h>
 
-        #include <stdio.h>
+int main()
+{
 
-        int main(){
+	char nome;
+	double salario_fixo, vendas ,total;
 
-            char nome;
-            double salario_fixo, vendas ,total;
+	scanf("%s",&nome);
+	scanf("%lf",&salario_fixo);
+	scanf("%lf",&vendas);
+		
+	total = salario_fixo + (vendas * 15 / 100);
 
-            scanf("%s",&nome);
-            scanf("%lf",&salario_fixo);
-            scanf("%lf",&vendas);
-            
-            total = salario_fixo + (vendas * 15 / 100);
-
-            printf("TOTAL = R$ %.2lf\n",total);
-        }
-
+	printf("TOTAL = R$ %.2lf\n",total);
+}
+```
 >PYTHON 3.9
+```Python 3.9
+nome = input()
+salario_fixo = float(input())
+vendas = float(input())
 
-        nome = input()
-        salario_fixo = float(input())
-        vendas = float(input())
-        
-        total = salario_fixo + (vendas * 15 / 100)
+total = salario_fixo + (vendas * 15 / 100)
 
-        print(f"TOTAL = R$ {total:.2f}")
+print(f"TOTAL = R$ {total:.2f}")
+```
