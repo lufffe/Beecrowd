@@ -6,7 +6,6 @@
 
 int main()
 {
-
 	int valores[6],i,valor,limite;
 
 	scanf("%d",&valor);
