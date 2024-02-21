@@ -22,8 +22,8 @@ int main()
 }
 ```
 
->C
-```
+>Python 3.9
+```Python
 import math
 
 x1,y1 = input().split()x1,y1 = float(x1),float(y1)
